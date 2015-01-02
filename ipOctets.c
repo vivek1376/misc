@@ -1,4 +1,4 @@
-/* breaks IP addr string into octets <vivek(at)gmail.com> */
+/* breaks IP addr string into octets <vivek.1376(at)gmail.com> */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
