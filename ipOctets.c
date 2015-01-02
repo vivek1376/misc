@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define _P2I(p) (unsigned long int)(p)
+#define P2I_(p) (unsigned long int)(p)
 
 char* splitOctet(char *, char **);
 
@@ -29,7 +29,7 @@ char* splitOctet(char *ipStr, char **octet)
     while(*p!='.' && *p!='\0')
 	p++;
     
-    unsigned long int count=_P2I(p)-_P2I(ipStr);
+    unsigned long int count=P2I_(p)-P2I_(ipStr);
 
     *octet=(char *)malloc((count+1)*sizeof(char));
     strncpy(*octet,ipStr,count);
